@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://res.cloudinary.com/dsdcaxwpg/image/upload/v1717198888/DeWatermark.ai_1717198780237_xvvzts.png);
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    font-family: 'roboto',sans-serif;
+    
+}
+
+.form{
+    width: 480px;
+    height: 500px;
+    color: #fff;
+    top: 100px;
+    font-family: 'roboto',sans-serif;
+    align-items: center;
+
+}
+.formbg{
+    background-image: linear-gradient(to right bottom,rgb(102, 0, 255),rgb(203, 28, 234),rgb(246, 150, 166));
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.heading{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    
+}
+
+input,.submit-btn{
+    width: 80%;
+    height: 42px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    transition: 5px;
+    text-transform: capitalize;
+    font-size: medium;
+}
+
+input::placeholder{
+    color: #fff;
+
+}
+
+input:focus,.submit-btn:hover{
+    background: #fff;
+    color: #000;
+    box-shadow: 0px 0px 20px white;
+    opacity: 0.8;
+}
+input:hover{
+    box-shadow: 0px 0px 20px white;
+}
+
+input:focus::placeholder{
+    color: #000;
+}
+
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+}
+
+.link{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(255,255,255,0.5);
+    display: block;
+    margin: 30px auto;
+}
+
+.cross:hover,.cross:active{
+    color: #000;
+}
+.cross{
+    font-size: 30px;
+    margin-left: 450px;
+    color: #fff;
+    
+}
+
+.link:hover{
+    color: #fff;
+}
+
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255,119,119);
+    border-top: 10px solid rgb(255,37,37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto',sans-serif;
+    text-align: center;
+    transition: 1s;
+}
